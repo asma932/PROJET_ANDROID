@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Quiz1">
+
+    <!-- Toolbar -->
+
+    <!-- Horizontal guideline to separate toolbar -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1"/>
+
+    <!-- Welcome Text -->
+
+    <!-- Vertical guideline to center options -->
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.577"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="109dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineVertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+
+
+    <!-- Option 1 -->
+
+    <!-- Option 2 -->
+
+    <ImageView
+        android:id="@+id/imageOption1"
+        style="@style/QuizText"
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:layout_margin="16dp"
+        android:onClick="moveToMainActivity"
+        android:src="@drawable/quizfast"
+        app:layout_constraintEnd_toStartOf="@id/guidelineVertical"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="286dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Menu de restauration rapide"
+        android:textColor="#673AB7"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/imageOption1"
+        tools:layout_editor_absoluteY="404dp"
+        tools:ignore="MissingConstraints" />
+
+    <!-- Option 2 -->
+
+
+    <ImageView
+        android:id="@+id/imageOption2"
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:layout_margin="16dp"
+        android:onClick="moveToMainActivity2"
+        android:src="@drawable/quizplat2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.774"
+        app:layout_constraintStart_toEndOf="@id/guidelineVertical"
+        tools:layout_editor_absoluteY="286dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Menu des plats"
+        android:textColor="#673AB7"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/imageOption2"
+        tools:layout_editor_absoluteY="404dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageOption3"
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="164dp"
+        android:onClick="moveToMainActivity"
+        android:src="@drawable/chorba"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guidelineVertical"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcomeText"
+        app:layout_constraintVertical_bias="0.633" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Menu Soupes"
+        android:textColor="#673AB7"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/imageOption3"
+        tools:layout_editor_absoluteY="554dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageOption4"
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="104dp"
+        android:onClick="moveToMainActivity2"
+        android:src="@drawable/salad"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.774"
+        app:layout_constraintStart_toEndOf="@id/guidelineVertical"
+        app:layout_constraintTop_toBottomOf="@id/welcomeText"
+        app:layout_constraintVertical_bias="0.633" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Menu Salades"
+        android:textColor="#673AB7"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/imageOption4"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        tools:layout_editor_absoluteY="554dp" />
+
+    <ImageView
+        android:id="@+id/imageOption5"
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="164dp"
+        android:onClick="moveToMainActivity"
+        android:src="@drawable/quizjust"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guidelineVertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcomeText"
+        app:layout_constraintVertical_bias="0.952" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Menu Boissons"
+        android:textColor="#673AB7"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/imageOption5"
+        tools:layout_editor_absoluteY="696dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageOption6"
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="104dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:onClick="moveToMainActivity2"
+        android:src="@drawable/quizcake"
+        android:textColor="#673AB7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.774"
+        app:layout_constraintStart_toEndOf="@id/guidelineVertical"
+        app:layout_constraintTop_toBottomOf="@id/welcomeText"
+        app:layout_constraintVertical_bias="0.959" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Menu Desserts"
+        android:textColor="#673AB7"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/imageOption6"
+        tools:layout_editor_absoluteY="696dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_dish"
+        android:text="Welcome to Quiz!"
+        android:textSize="110px"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="120dp"
+        tools:layout_editor_absoluteY="210dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/top_signup"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-2dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

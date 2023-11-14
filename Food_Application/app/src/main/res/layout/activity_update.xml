@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity"
+    android:background="@drawable/y2"
+    android:padding="30dp">
+
+    <EditText
+        android:id="@+id/title_input2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext_background"
+        android:ems="20"
+        android:hint="Quiz Title"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/quiz_image2"
+        android:layout_width="138dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/quiz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_input2" />
+
+    <EditText
+        android:id="@+id/question_input2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="Quiz Question"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quiz_image2" />
+
+    <EditText
+        android:id="@+id/option1_input2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="Option 1"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_input2" />
+
+
+    <EditText
+        android:id="@+id/option2_input2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="Option 2"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/option1_input2" />
+
+    <EditText
+        android:id="@+id/option3_input2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="Option 3"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/option2_input2" />
+
+    <Button
+        android:id="@+id/update_button"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:text="Update"
+        android:backgroundTint="@color/colorPrimary"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/option3_input2" />
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:text="Delete"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:backgroundTint="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

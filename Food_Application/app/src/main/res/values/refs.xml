@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="animation_list">
+        <!-- res/drawable/animation_list.xml -->
+        <animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+            <item android:drawable="@drawable/animated_image_frame_1" android:duration="200" />
+            <item android:drawable="@drawable/animated_image_frame_2" android:duration="200" />
+            <!-- Ajoutez d'autres frames ici -->
+        </animation-list>
+    </drawable>
+</resources>
