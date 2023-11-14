@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">FoodApp</string>
+    <string name="my_restaurant_app">My Restaurant app</string>
+    <string name="my_restaurant_app1">My Restaurant App</string>
+    <string name="hello_explore_your_dream_food">hello explore your dream food</string>
+    <string name="sign_in">Sign In</string>
+    <string name="register">Register</string>
+    <string name="full_name">Full Name</string>
+    <string name="address_email">Address Email</string>
+    <string name="phone">phone</string>
+    <string name="password">password</string>
+    <string name="already_registered">Already Registered ?</string>
+    <string name="don_t_have_an_account">Don\'t have An Account ?</string>
+</resources>
