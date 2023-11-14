@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/y2"
+    android:padding="18dp">
+
+    <!-- Titre du Quiz -->
+    <TextView
+        android:id="@+id/quizTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quiz sur la Nourriture"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edittext_background" />
+
+    <ImageView
+        android:id="@+id/imageadd"
+        android:layout_width="146dp"
+        android:layout_height="106dp"
+        android:layout_below="@id/quizTitle"
+        android:layout_marginTop="29dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/carotte" />
+
+    <EditText
+        android:id="@+id/Question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageadd"
+        android:layout_marginTop="16dp"
+        android:textColorHint="@android:color/black"
+        android:textColor="@android:color/black"
+        android:background="#30ffffff"
+        android:hint="Quel est votre plat préféré?"
+        android:textSize="18sp"/>
+
+    <!-- Réponse 1 -->
+    <EditText
+        android:id="@+id/reponse1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Question"
+        android:layout_marginTop="16dp"
+        android:hint="Réponse 1"
+        android:background="@drawable/edittext_background" />
+
+    <!-- Réponse 2 -->
+    <EditText
+        android:id="@+id/reponse2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reponse1"
+        android:layout_marginTop="16dp"
+        android:hint="Réponse 2"
+        android:background="@drawable/edittext_background" />
+
+    <!-- Réponse 3 -->
+    <EditText
+        android:id="@+id/answerEditText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reponse2"
+        android:layout_marginTop="16dp"
+        android:hint="Réponse 3"
+        android:background="@drawable/edittext_background" />
+
+    <!-- Bouton Soumettre -->
+    <Button
+        android:id="@+id/ButtomAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/answerEditText3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginEnd="16dp"
+    android:text="Soumettre" />
+</RelativeLayout>
+
+    <!-- res/drawable/edittext_background.xml -->
+
